@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netflix Clone</title>
+<style>
+  /* Your CSS styles here */
+
+  /* Update header styles */
+  .header {
+    background-color: #221f1f;
+    color: #ffffff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+
+  /* Update navigation styles */
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 18px;
+  }
+
+  /* Change navigation items color to red */
+  .nav-item {
+    margin-right: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #e50914; /* Red color */
+  }
+
+  /* Update hero section styles */
+  .hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0;
+    padding-top: 1pc;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  /* Update content section styles */
+  .content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 60px 20px;
+  }
+
+  .content-item {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .content-item:hover {
+    transform: scale(1.05);
+  }
+
+  .content-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+  .content-item h3 {
+    color: #ffffff; /* Light text color on black background */
+  }
+
+  /* Add a styled footer */
+  .footer {
+    background-color: #171717;
+    color: #8e8e8e;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+  }
+
+  .footer a {
+    color: #8e8e8e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer a:hover {
+    color: #ffffff;
+  }
+</style>
+</head>
+<body>
+  <header class="header">
+    <img class="header-logo" src="c:\Users\Elitebook 840 G6\Pictures\netflix3.jpg" alt="Netflix Logo">
+    <nav class="nav">
+      <div class="nav-item">Home</div>
+      <div class="nav-item">TV Shows</div>
+      <div class="nav-item">Movies</div>
+      <div class="nav-item">New & Popular</div>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Unlimited Entertainment Awaits</h1>
+    <p>Stream movies, shows, and more on all your devices.</p>
+    <p style="color: black; font-size: 30px; margin-top: 10px; margin-bottom: 1px;">Welcome to Netflix</p>
+    <p style="color: black;">"The stage is not merely the meeting place of all the arts, but is also the return of art to life."</p>
+    <!-- Insert the image below -->
+    <img src="c:\Users\Elitebook 840 G6\Pictures\theature2.jpg" alt="Your Image">
+  </div>
+
+  <div class="content">
+    <div class="content-item">
+      <img src="c:\Users\Elitebook 840 G6\Downloads\tamil hero.jpeg" alt="Movie 1">
+      <h3 style="color: white;">Download Kollywood Movies Here...</h3>
+    </div>
+    <div class="content-item">
+      <img src="c:\Users\Elitebook 840 G6\Downloads\hollywood hero.jpeg" alt="Movie 2">
+      <h3 style="color: white;">Download Hollywood Movies Here...</h3>
+    </div>
+    <div class="content-item">
+      <img src="c:\Users\Elitebook 840 G6\Pictures\bollywood hero2.jpg" alt="Show 1">
+      <h3 style="color: white;">Download Bollywood Movies Here...</h3>
+    </div>
+    <div class="content-item">
+      <img src="c:\Users\Elitebook 840 G6\Downloads\mollywood heros.jpeg" alt="Show 2">
+      <h3 style="color: white;">Download Mollywood Movies Here...</h3>
+    </div>
+    <!-- Add more content items here -->
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2023 Netflix Clone. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+  </footer>
+
+</body>
+</html>
